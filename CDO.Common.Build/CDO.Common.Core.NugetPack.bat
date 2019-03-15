@@ -1,0 +1,1 @@
+.\nuget pack CDO.Common.Core.nuspec
