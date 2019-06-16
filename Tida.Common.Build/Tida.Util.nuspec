@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Tida.Util</id>
+    <version>0.4.1.0</version>
+    <authors>Janus</authors>
+    <owners>Janus</owners>
+    <!-- <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl> -->
+    <projectUrl>https://github.com/JanusTida/Tida.Common</projectUrl>
+    <!-- <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl> -->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>A common repository for Dynamic,XMl,Reflection.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2017</copyright>
+
+  </metadata>
+	<files>
+		<file src="..\bin\Release\Tida.Util.dll" target="lib\NET452" />
+		<file src="..\bin\Release\Tida.Util.xml" target="lib\NET452" />
+	</files>
+</package>

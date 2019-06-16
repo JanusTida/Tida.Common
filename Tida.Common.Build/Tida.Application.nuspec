@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Tida.Application</id>
+    <version>0.4.8.0</version>
+    <authors>Janus</authors>
+    <owners>Janus</owners>
+    <!-- <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl> -->
+    <projectUrl>http://192.168.1.20/Janus2018/CDO.Common</projectUrl>
+    <!-- <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl> -->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Common repository for application</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2017</copyright>
+	
+    <dependencies>
+	  <dependency id="Tida.Application.Contracts" version="0.4.1.0"/>
+	  <dependency id="Ookii.Dialogs" version="1.0.0"/>
+    </dependencies>
+  </metadata>
+	<files>
+		<file src="..\bin\Release\Tida.Application.dll" target="lib\NET452" />
+		<file src="..\bin\Release\Tida.Application.xml" target="lib\NET452" />
+		<file src="..\bin\Release\Languages\" target="content\TidaAppContent\Languages"/>
+		<file src="..\bin\Release\LanguageConfig.xml" target="content\TidaAppContent\LanguageConfig.xml"/>
+		<file src="..\bin\Release\LanguageConfig_Backup.xml" target="content\TidaAppContent\LanguageConfig_Backup.xml"/>
+	</files>
+</package>

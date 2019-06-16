@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Tida.Application.Contracts</id>
+    <version>0.4.1.0</version>
+    <authors>Janus</authors>
+    <owners>Janus</owners>
+    <!-- <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl> -->
+    <projectUrl>https://github.com/JanusTida/Tida.Common</projectUrl>
+    <!-- <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl> -->
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Common repository for application contracts.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2019</copyright>
+	
+    <dependencies>
+	  <dependency id="Tida.Util" version="0.4.1.0"/>
+	  <dependency id="Prism.Mef" version="6.3.0"/>
+    </dependencies>
+  </metadata>
+	<files>
+		<file src="..\bin\Release\Tida.Application.Contracts.dll" target="lib\NET452" />
+		<file src="..\bin\Release\Tida.Application.Contracts.xml" target="lib\NET452" />
+	</files>
+</package>
