@@ -11,6 +11,7 @@ using System.Xml.Linq;
 using System.Reflection;
 using Tida.Application.Contracts.App;
 using Tida.Application.Contracts.Common;
+using Tida.Xml;
 
 namespace Tida.Application.App {
     /// <summary>

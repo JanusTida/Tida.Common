@@ -85,6 +85,7 @@
     <Compile Include="App\Views\InputValueWindow.xaml.cs">
       <DependentUpon>InputValueWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Common\CommandItem.cs" />
     <Compile Include="Controls\ViewProviderImpl.cs" />
     <Compile Include="BootStrapper.cs" />
     <Compile Include="Common\Constants.cs" />

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tida.Util.Util {
+namespace Tida.Util {
     /// <summary>
     /// 静态实例基类;
     /// </summary>

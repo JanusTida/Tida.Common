@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tida.Util.Extending {
+namespace Tida.Extending {
     public static class ExtensibleExtensions {
         /// <summary>
         /// 从可拓展实例中获取或创建实例;

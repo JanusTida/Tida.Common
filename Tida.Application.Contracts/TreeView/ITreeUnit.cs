@@ -6,7 +6,7 @@ using System.Collections.Specialized;
 using System.Security.Authentication;
 using Prism.Mvvm;
 using Tida.Application.Contracts.Common;
-using Tida.Util.Extending;
+using Tida.Extending;
 
 namespace Tida.Application.Contracts.TreeView {
     

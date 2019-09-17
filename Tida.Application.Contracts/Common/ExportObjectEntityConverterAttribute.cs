@@ -1,4 +1,4 @@
-﻿using Tida.Util.Util;
+﻿using Tida.Util;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.Composition;

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tida.Util.Extending {
+namespace Tida.Extending {
     /// <summary>
     /// 只读拓展(提供算法逻辑);
     /// </summary>

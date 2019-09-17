@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tida.Util.Util {
+namespace Tida.Util {
     /// <summary>
     /// 类-结构体转化器契约,,旨在减少检查参数的重复性代码;
     /// </summary>

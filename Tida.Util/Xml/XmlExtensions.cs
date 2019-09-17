@@ -2,7 +2,7 @@
 using System.Runtime.CompilerServices;
 using System.Xml.Linq;
 
-namespace Tida.Application.Contracts.Common {
+namespace Tida.Xml {
     /// <summary>
     /// 针对<see cref="System.Xml.Linq"/>的拓展;
     /// </summary>

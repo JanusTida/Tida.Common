@@ -67,6 +67,9 @@
     <Compile Include="App\Input\IInputCheckResult.cs" />
     <Compile Include="App\IThemeService.cs" />
     <Compile Include="App\WindowExtension.cs" />
+    <Compile Include="Common\GenericCollectionExtension.cs" />
+    <Compile Include="Common\ICommandItem.cs" />
+    <Compile Include="Common\ICustomNotify.cs" />
     <Compile Include="Common\ExportObjectEntityConverterAttribute.cs" />
     <Compile Include="Controls\GridExtensions.cs" />
     <Compile Include="Controls\ExportViewAttribute.cs" />
@@ -91,6 +94,7 @@
     <Compile Include="Controls\GridViewAutoGeneratingColumnEventArgs.cs" />
     <Compile Include="Controls\InputBindingExtensions.cs" />
     <Compile Include="Controls\IStackGrid.cs" />
+    <Compile Include="Conveters\BoolToVisibilityConverter.cs" />
     <Compile Include="Docking\DockingPaneBase.cs" />
     <Compile Include="Docking\CreatedDockingContainer.cs" />
     <Compile Include="Docking\CreatedDockingGroup.cs" />

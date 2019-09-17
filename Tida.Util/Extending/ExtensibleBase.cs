@@ -4,7 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tida.Util.Extending {
+namespace Tida.Extending {
+    /// <summary>
+    /// 基于内存的可拓展存储基类;
+    /// </summary>
     public abstract class ExtensibleBase : ReadOnlyExtensibleBase {
         public virtual TInstance GetInstance<TInstance>(string extName) => GetInstanceCore<TInstance>(extName);
         public virtual TInstance GetGeneralInstance<TInstance>(string extName) => GetGeneralInstanceCore<TInstance>(extName);

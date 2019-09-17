@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tida.Util.Extending {
+namespace Tida.Extending {
     public class ReadOnlyExtensibleObject : ReadOnlyExtensibleBase, IReadOnlyExtensible {
         public TInstance GetInstance<TInstance>(string extName) => GetInstanceCore<TInstance>(extName);
 

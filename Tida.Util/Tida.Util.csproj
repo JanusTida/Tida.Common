@@ -7,7 +7,7 @@
     <ProjectGuid>{23F80705-B0FF-4C51-A917-1B1BC4B75A5C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tida.Util</RootNamespace>
+    <RootNamespace>Tida</RootNamespace>
     <AssemblyName>Tida.Util</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -47,6 +47,7 @@
     <Compile Include="Extending\IExtensible.cs" />
     <Compile Include="Extending\InstanceCell.cs" />
     <Compile Include="Extending\ReadOnlyExtensibleBase.cs" />
+    <Compile Include="IO\OperatebleStream.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Util\ClassClassConverter.cs" />
     <Compile Include="Util\ClassStructConverter.cs" />
@@ -55,7 +56,9 @@
     <Compile Include="Util\ICloneable.cs" />
     <Compile Include="Util\IObjectEntityConverter.cs" />
     <Compile Include="Util\StructClassConverter.cs" />
+    <Compile Include="Util\TreeUtils.cs" />
     <Compile Include="Xml\XmlExtensions.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

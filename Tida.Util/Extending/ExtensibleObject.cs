@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Tida.Util.Extending {
+namespace Tida.Extending {
     /// <summary>
     /// 可动态拓展类;
     /// </summary>

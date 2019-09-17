@@ -1,4 +1,4 @@
-﻿using Tida.Util.Extending;
+﻿using Tida.Extending;
 using Prism.Mvvm;
 using System;
 using System.Collections.Generic;
