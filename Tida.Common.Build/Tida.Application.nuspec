@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Tida.Application</id>
-    <version>0.5.0.0</version>
+    <version>1.0.0</version>
     <authors>Janus</authors>
     <owners>Janus</owners>
     <!-- <licenseUrl>http://LICENSE_URL_HERE_OR_DELETE_THIS_LINE</licenseUrl> -->
@@ -14,7 +14,7 @@
     <copyright>Copyright 2017</copyright>
 	
     <dependencies>
-	  <dependency id="Tida.Application.Contracts" version="0.4.1.0"/>
+	  <dependency id="Tida.Application.Contracts" version="1.0.0"/>
 	  <dependency id="Ookii.Dialogs" version="1.0.0"/>
     </dependencies>
   </metadata>
