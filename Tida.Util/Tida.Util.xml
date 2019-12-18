@@ -1,0 +1,301 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Tida.Util</name>
+    </assembly>
+    <members>
+        <member name="T:Tida.Extending.ExtensibleBase">
+            <summary>
+            基于内存的可拓展存储基类;
+            </summary>
+        </member>
+        <member name="M:Tida.Extending.ExtensibleExtensions.GetOrCreateInstance``1(Tida.Extending.IExtensible,System.String,System.Func{``0})">
+            <summary>
+            从可拓展实例中获取或创建实例;
+            </summary>
+            <typeparam name="TInstance"></typeparam>
+            <param name="ext"></param>
+            <param name="extName"></param>
+            <param name="factory">生产方法</param>
+            <returns></returns>
+        </member>
+        <member name="M:Tida.Extending.ExtensibleExtensions.GetOrCreateInstanceInform``1(Tida.Extending.IExtensible,System.String,System.Func{``0})">
+            <summary>
+            从可拓展实例中获取或创建实例;并能告知是否为新建;
+            </summary>
+            <typeparam name="TInstance"></typeparam>
+            <param name="ext"></param>
+            <param name="extName"></param>
+            <param name="factory">生产方法</param>
+            <returns>isNew指示是否为新建的实例</returns>
+        </member>
+        <member name="T:Tida.Extending.ExtensibleObject">
+            <summary>
+            可动态拓展类;
+            </summary>
+        </member>
+        <member name="T:Tida.Extending.IExtensible">
+            <summary>
+            可拓展契约;
+            </summary>
+        </member>
+        <member name="M:Tida.Extending.IExtensible.SetInstance``1(``0,System.String)">
+            <summary>
+            设定拓展实例;
+            </summary>
+            <typeparam name="TInstance"></typeparam>
+            <param name="instance"></param>
+        </member>
+        <member name="M:Tida.Extending.IExtensible.RemoveInstance``1(System.String)">
+            <summary>
+            移除拓展实例;
+            </summary>
+            <typeparam name="TInstance"></typeparam>
+            <param name="extName"></param>
+        </member>
+        <member name="P:Tida.Extending.ITextExtensible.Item(System.String)">
+            <summary>
+            拓展元素;
+            </summary>
+        </member>
+        <member name="P:Tida.Extending.ITextExtensible.Item(System.String,System.String)">
+            <summary>
+            拓展元素属性;
+            </summary>
+            <param name="extendElemName"></param>
+            <param name=""></param>
+            <returns></returns>
+        </member>
+        <member name="P:Tida.Extending.ITextReadOnlyExtensible.Item(System.String,System.String)">
+            <summary>
+            拓展元素属性;
+            </summary>
+            <param name="extendElemName"></param>
+            <param name=""></param>
+            <returns></returns>
+        </member>
+        <member name="P:Tida.Extending.ITextReadOnlyExtensible.Item(System.String)">
+            <summary>
+            拓展元素;
+            </summary>
+        </member>
+        <member name="T:Tida.Extending.InstanceCell">
+            <summary>
+            实例状态元素;
+            </summary>
+        </member>
+        <member name="P:Tida.Extending.InstanceCell.InstanceType">
+            <summary>
+            实例类型;
+            </summary>
+        </member>
+        <member name="P:Tida.Extending.InstanceCell.ExtName">
+            <summary>
+            拓展属性名;
+            </summary>
+        </member>
+        <member name="P:Tida.Extending.InstanceCell.Instance">
+            <summary>
+            实例本身;
+            </summary>
+        </member>
+        <member name="T:Tida.Extending.IReadOnlyExtensible">
+            <summary>
+            只读拓展契约;
+            </summary>
+        </member>
+        <member name="M:Tida.Extending.IReadOnlyExtensible.GetInstance``1(System.String)">
+            <summary>
+            获得拓展实例;
+            </summary>
+            <typeparam name="TInstance">拓展实例类型</typeparam>
+            <returns></returns>
+        </member>
+        <member name="T:Tida.Extending.ReadOnlyExtensibleBase">
+            <summary>
+            只读拓展(提供算法逻辑);
+            </summary>
+        </member>
+        <member name="P:Tida.Extending.ReadOnlyExtensibleBase.StateCells">
+            <summary>
+            存储状态的集合;
+            </summary>
+        </member>
+        <member name="M:Tida.Extending.ReadOnlyExtensibleBase.GetGeneralInstanceCore``1(System.String)">
+            <summary>
+            类型判断拆箱获取类型;
+            </summary>
+            <typeparam name="TInstance"></typeparam>
+            <param name="extName"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Tida.IO.OperatebleStream">
+            <summary>
+            当位置发生变化时可通知位置的Stream;
+            以应对不能使用异步方法的类在进行耗时操作时不能取消,通知的缺点;
+            </summary>
+        </member>
+        <member name="P:Tida.IO.OperatebleStream.Broken">
+            <summary>
+            是否被中止;
+            </summary>
+        </member>
+        <member name="P:Tida.IO.OperatebleStream.OriStream">
+            <summary>
+            原始流;
+            </summary>
+        </member>
+        <member name="T:Tida.Util.ClassClassConverter`2">
+            <summary>
+            类-类转化器基类,旨在减少检查参数的重复性代码;
+            </summary>
+            <typeparam name="TObject"></typeparam>
+            <typeparam name="TEntity"></typeparam>
+        </member>
+        <member name="T:Tida.Util.ClassStructConverter`2">
+            <summary>
+            类-结构体转化器契约,,旨在减少检查参数的重复性代码;
+            </summary>
+            <typeparam name="TObject">原始类型(引用类型)</typeparam>
+            <typeparam name="TEntity">存储类型(结构体)</typeparam>
+        </member>
+        <member name="T:Tida.Util.GenericStaticInstance`1">
+            <summary>
+            静态实例基类;
+            </summary>
+            <typeparam name="TInstance"></typeparam>
+        </member>
+        <member name="T:Tida.Util.GuidExtension">
+            <summary>
+            GUID相关拓展;
+            </summary>
+        </member>
+        <member name="M:Tida.Util.GuidExtension.Random">
+            <summary>
+            随机生成一个大写的新的GUID字符串;
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:Tida.Util.Common.Util.ICloneable`1">
+            <summary>
+            可复制契约;
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="M:Tida.Util.Common.Util.ICloneable`1.Clone">
+            <summary>
+            复制自身;
+            </summary>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Tida.Util.IObjectEntityConverter`2" -->
+        <member name="M:Tida.Util.IObjectEntityConverter`2.ConvertObjectToEntity(`0)">
+            <summary>
+            从数据类型转换为存储模型;
+            </summary>
+            <param name="tObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tida.Util.IObjectEntityConverter`2.ConvertEntityToObject(`1)">
+            <summary>
+            从存储模型转换为数据类型;
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Tida.Util.IObjectEntityConverter">
+            <summary>
+            等价转换接口;
+            </summary>
+        </member>
+        <member name="P:Tida.Util.IObjectEntityConverter.ObjectType">
+            <summary>
+            原始类型;
+            </summary>
+        </member>
+        <member name="P:Tida.Util.IObjectEntityConverter.EntityType">
+            <summary>
+            存储类型;
+            </summary>
+        </member>
+        <member name="M:Tida.Util.IObjectEntityConverter.ConvertObjectToEntity(System.Object)">
+            <summary>
+            从原始类型转换为存储模型;
+            </summary>
+            <param name="tObject"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tida.Util.IObjectEntityConverter.ConvertEntityToObject(System.Object)">
+            <summary>
+            从存储模型转换为原始类型;
+            </summary>
+            <param name="entity"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Tida.Util.StructClassConverter`2">
+            <summary>
+            结构体-类转化器契约,,旨在减少检查参数的重复性代码;
+            </summary>
+            <typeparam name="TObject">原始类型(结构体)</typeparam>
+            <typeparam name="TEntity">存储类型(引用类型)</typeparam>
+        </member>
+        <member name="T:Tida.Util.TreeUtils">
+            <summary>
+            树的相关拓展方法;
+            </summary>
+        </member>
+        <member name="M:Tida.Util.TreeUtils.DepthFirstTraverse``1(``0,System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">
+            <summary>
+            深度优先遍历某个节点;
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="root"></param>
+            <param name="getChilren"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tida.Util.TreeUtils.BreadthFirstTraverse``1(``0,System.Func{``0,System.Collections.Generic.IEnumerable{``0}})">
+            <summary>
+            广度优先遍历某个节点;
+            </summary>
+            <typeparam name="TEntity"></typeparam>
+            <param name="root"></param>
+            <param name="getChilren"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Tida.Xml.XmlExtensions">
+            <summary>
+            针对<see cref="N:System.Xml.Linq"/>的拓展;
+            </summary>
+        </member>
+        <member name="M:Tida.Xml.XmlExtensions.GetXElemValue(System.Xml.Linq.XElement,System.String)">
+            <summary>
+            从Xelem中获得值;
+            </summary>
+            <param name="elemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tida.Xml.XmlExtensions.SetXElemValue(System.Xml.Linq.XElement,System.Object,System.String)">
+            <summary>
+            设定Xelem中
+            </summary>
+            <param name="value"></param>
+            <param name="elemName"></param>
+        </member>
+        <member name="M:Tida.Xml.XmlExtensions.GetOrCreateXElem(System.Xml.Linq.XElement,System.String)">
+            <summary>
+            获得本地子元素(若无则创建)
+            </summary>
+            <param name="elemName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Tida.Xml.XmlExtensions.GetGroup(System.Xml.Linq.XElement,System.String)">
+            <summary>
+            获得属性组单元;
+            </summary>
+            <param name="xElem"></param>
+            <param name="groupName"></param>
+            <returns></returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:Tida.Xml.XItemsGroup" -->
+    </members>
+</doc>
