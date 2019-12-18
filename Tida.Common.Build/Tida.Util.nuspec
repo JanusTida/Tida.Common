@@ -16,8 +16,8 @@
   </metadata>
 	<files>
 		<file src="..\Tida.Util\bin\Release\net45\Tida.Util.dll" target="lib\net45" />
-		<file src="..\Tida.Util\Tida.Util.xml" target="lib\net45" />
+		<file src="..\Tida.Util\bin\Release\net45\Tida.Util.xml" target="lib\net45" />
 		<file src="..\Tida.Util\bin\Release\netstandard2.0\Tida.Util.dll" target="lib\netstandard2.0" />
-		<file src="..\Tida.Util\Tida.Util.xml" target="lib\netstandard2.0" />
+		<file src="..\Tida.Util\bin\Release\netstandard2.0\Tida.Util.xml" target="lib\netstandard2.0" />
 	</files>
 </package>
