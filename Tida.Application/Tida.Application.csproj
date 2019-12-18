@@ -147,7 +147,7 @@
       <Name>Tida.Application.Contracts</Name>
     </ProjectReference>
     <ProjectReference Include="..\Tida.Util\Tida.Util.csproj">
-      <Project>{23F80705-B0FF-4C51-A917-1B1BC4B75A5C}</Project>
+      <Project>{64f5c8d8-94c8-43cb-bb34-b9fef049ad4c}</Project>
       <Name>Tida.Util</Name>
     </ProjectReference>
   </ItemGroup>

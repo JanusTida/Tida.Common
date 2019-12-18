@@ -176,7 +176,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Tida.Util\Tida.Util.csproj">
-      <Project>{23f80705-b0ff-4c51-a917-1b1bc4b75a5c}</Project>
+      <Project>{64f5c8d8-94c8-43cb-bb34-b9fef049ad4c}</Project>
       <Name>Tida.Util</Name>
     </ProjectReference>
   </ItemGroup>
